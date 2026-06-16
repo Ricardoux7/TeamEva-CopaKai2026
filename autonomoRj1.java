@@ -51,42 +51,70 @@ public class autonomoRj1 extends LinearOpMode {
 
             leftDrive.setPower(0.0);
             rightDrive.setPower(1.0);
-            sleep(700);
-
-            servoShooter1.setPower(1.0);
-            servoShooter2.setPower(-1.0);
-            shootMotor.setPower(1.0);
-            //aqui ira que se mueva todo el intake
-            sleep(3000);
-
-            rightDrive.setPower(0.0);
-            leftDrive.setPower(1.0);
-            servoShooter1.setPower(0.0);
-            servoShooter2.setPower(0.0);
-            shootMotor.setPower(0.0);
-
-            sleep(100);
+            sleep(400);
 
             leftDrive.setPower(1.0);
             rightDrive.setPower(1.0);
-            //intake activado
+            sleep(200);
 
-            sleep(700);
+            servoShooter1.setPower(1.0);
+            servoShooter2.setPower(1.0);
+            intakeMotor.setPower(1.0);
+            shootMotor.setPower(1.0);
+            sleep(5000);
+
+            leftDrive.setPower(1.0);
+            rightDrive.setPower(0.0);
+            servoShooter1.setPower(0.0);
+            servoShooter2.setPower(0.0);
+            intakeMotor.setPower(0.0);
+            shootMotor.setPower(0.0);
+            sleep(400);
+
+            leftDrive.setPower(1.0);
+            rightDrive.setPower(1.0);
+            sleep(500);
+
+            leftDrive.setPower(1.0);
+            rightDrive.setPower(0.0);
+            sleep(500);
+
+            leftDrive.setPower(1.0);
+            rightDrive.setPower(1.0);
+            intakeMotor.setPower(1.0);
+            sleep(1500);
+
 
             leftDrive.setPower(-1.0);
             rightDrive.setPower(-1.0);
-            sleep(700);
+            intakeMotor.setPower(0.0);
+            sleep(1500);
 
-            leftDrive.setPower(0.0);
+            leftDrive.setPower(1.0);
+            rightDrive.setPower(0.0);
+            sleep(500);
+
+            leftDrive.setPower(1.0);
             rightDrive.setPower(1.0);
-            sleep(100);
+            sleep(500);
+
+            leftDrive.setPower(1.0);
+            rightDrive.setPower(0.0);
+            sleep(300);
 
             servoShooter1.setPower(1.0);
-            servoShooter2.setPower(-1.0);
+            servoShooter2.setPower(1.0);
+            intakeMotor.setPower(1.0);
             shootMotor.setPower(1.0);
-            //motor intake tambien activado
+            sleep(5000);
 
-            sleep(3000);
+            leftDrive.setPower(-1.0);
+            rightDrive.setPower(-1.0);
+            servoShooter1.setPower(0.0);
+            servoShooter2.setPower(0.0);
+            intakeMotor.setPower(0.0);
+            shootMotor.setPower(0.0);
+            sleep(1000);
         }
     }
 }
