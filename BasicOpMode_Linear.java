@@ -23,6 +23,10 @@ public class BasicOpMode_Linear extends LinearOpMode {
     DcMotor motorCanon;
     DcMotor motorRecogida;
 
+    double movimiento, curva;
+    boolean disparo, recogida;
+
+
     double poderIzquierdo, poderDerecho;
 
     @Override
@@ -46,10 +50,10 @@ public class BasicOpMode_Linear extends LinearOpMode {
 
         while (opModeIsActive()) {
 
-            double movimiento = -gamepad1.left_stick_y;
-            double curva = gamepad1.right_stick_x;
-            boolean disparo = gamepad1.left_trigger_pressed;
-            boolean recogida = gamepad1.a;
+            movimiento = -gamepad1.left_stick_y;
+            curva = gamepad1.right_stick_x;
+            disparo = gamepad1.left_trigger_pressed;
+            recogida = gamepad1.a;
 
             poderIzquierdo = Range.clip(movimiento + curva, -1.0, 1.0) ;
             poderDerecho = Range.clip(movimiento - curva, -1.0, 1.0) ;
